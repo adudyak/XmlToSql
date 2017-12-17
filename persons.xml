@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <person>
+    <firstName>Николай</firstName>
+	<lastName>Сидоров</lastName>
+  </person>
+  <person>
+    <firstName>Алан</firstName>
+	<lastName>Вейк</lastName>
+  </person>
+</data>
