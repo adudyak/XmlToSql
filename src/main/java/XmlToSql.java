@@ -15,12 +15,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class XmlToSql {
-    static String dbUrl = "jdbc:mysql://localhost/";
-    static String user = "admin";
-    static String pass = "Temp1234%";
-    static String dbName = "GFL";
-    static String tableName = "PERSONS";
-    static String xmlFilePath = "\\Users\\AlexD\\IdeaProjects\\XmlToSql\\persons.xml";
+    private static String dbUrl = "jdbc:mysql://localhost/";
+    private static String user = "admin";
+    private static String pass = "Temp1234%";
+    private static String dbName = "GFL";
+    private static String tableName = "PERSONS";
+    private static String xmlFilePath = "\\Users\\AlexD\\IdeaProjects\\XmlToSql\\persons.xml";
 
     public static void xmlToSql() {
         try {
@@ -53,12 +53,16 @@ public class XmlToSql {
             conn.close();
 
         } catch (SQLException e) {
+            System.out.println("SQL Exception");
             e.printStackTrace();
         } catch (IOException e) {
+            System.out.println("IO Exception");
             e.printStackTrace();
         } catch (SAXException e) {
+            System.out.println("SAX Exception");
             e.printStackTrace();
         } catch (ParserConfigurationException e) {
+            System.out.println("Parser Configuration Exception");
             e.printStackTrace();
         }
     }
