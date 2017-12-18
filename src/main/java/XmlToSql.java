@@ -1,4 +1,4 @@
-// Creates SQL table with data from given xml file.
+// Creates SQL database and table with data from given xml file.
 // adudyak
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
